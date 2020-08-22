@@ -19,7 +19,7 @@ public class GoogleTest {
 	@BeforeMethod
 	public void setUp(){
 		System.out.println("Inside setup beforemethod");
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sibu\\Desktop\\Selenium\\chromedriver_win32\\chromedriver");	
+	//	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sibu\\Desktop\\Selenium\\chromedriver_win32\\chromedriver");	
 		driver = new ChromeDriver(); //launch chrome
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
