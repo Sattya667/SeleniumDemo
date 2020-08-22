@@ -31,9 +31,10 @@ public class GoogleTest {
 	
 	//2
 	@Test(priority=1,groups="Title")
-	public void googleTitleTest(){
+	public void googleTitleTest() throws Exception{
 		String title = driver.getTitle();
 		System.out.println(title);
+		ScreenShotExperiment.captureScreenShot(driver);
 		
 	}
 	
